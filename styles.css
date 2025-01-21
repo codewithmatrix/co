@@ -10,7 +10,7 @@ header {
     position: sticky;
     top: 0;
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
 }
 
 .header-content {
@@ -66,3 +66,29 @@ footer {
 
 #signup-form input {
     padding: 10 }
+    
+ .button {
+        background-color: #000000; /* Green */
+        border: none;
+        color: rgb(255, 255, 255);
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: grab;
+        border-radius: 8px;
+        transition: background-color 1s, transform 0.2s;
+    }
+
+.button:hover {
+        background-color: #474747; 
+        transform: scale(1.1);
+        border-radius: 20px;
+        
+    }
+
+.button:active {
+        transform: scale(0.99);
+    }
